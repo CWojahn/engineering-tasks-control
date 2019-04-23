@@ -330,4 +330,7 @@ ASALocalRun/
 .mfractor/
 
 #content
-./Content/*.png
+Content/*.png
+Content/*.jpg
+Content/*.txt
+Content/.DS_Store
