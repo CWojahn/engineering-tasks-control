@@ -53,6 +53,42 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Login() As String
+            Get
+                Return CType(Me("Login"),String)
+            End Get
+            Set
+                Me("Login") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property pass() As String
+            Get
+                Return CType(Me("pass"),String)
+            End Get
+            Set
+                Me("pass") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property saved() As Boolean
+            Get
+                Return CType(Me("saved"),Boolean)
+            End Get
+            Set
+                Me("saved") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
