@@ -28,7 +28,7 @@ Partial Class LoginForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Login = New System.Windows.Forms.TextBox()
+        Me.Username = New System.Windows.Forms.TextBox()
         Me.Password = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -96,26 +96,26 @@ Partial Class LoginForm
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Senha"
         '
-        'Login
+        'Username
         '
-        Me.Login.BackColor = System.Drawing.SystemColors.Control
-        Me.Login.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Login.Font = New System.Drawing.Font("Bookman Old Style", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Login.Location = New System.Drawing.Point(62, 233)
-        Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(170, 13)
-        Me.Login.TabIndex = 3
+        Me.Username.BackColor = System.Drawing.SystemColors.Control
+        Me.Username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Username.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Username.Location = New System.Drawing.Point(62, 230)
+        Me.Username.Name = "Username"
+        Me.Username.Size = New System.Drawing.Size(170, 16)
+        Me.Username.TabIndex = 1
         '
         'Password
         '
         Me.Password.BackColor = System.Drawing.SystemColors.Control
         Me.Password.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Password.Font = New System.Drawing.Font("Bookman Old Style", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Password.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Password.Location = New System.Drawing.Point(62, 310)
         Me.Password.Name = "Password"
         Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Password.Size = New System.Drawing.Size(170, 13)
-        Me.Password.TabIndex = 4
+        Me.Password.TabIndex = 2
         '
         'Button1
         '
@@ -128,7 +128,7 @@ Partial Class LoginForm
         Me.Button1.Location = New System.Drawing.Point(98, 382)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 36)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -156,7 +156,7 @@ Partial Class LoginForm
         Me.CheckBox1.Location = New System.Drawing.Point(62, 344)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(100, 17)
-        Me.CheckBox1.TabIndex = 8
+        Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Lembrar de mim"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -170,7 +170,7 @@ Partial Class LoginForm
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Password)
-        Me.Controls.Add(Me.Login)
+        Me.Controls.Add(Me.Username)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
@@ -189,7 +189,7 @@ Partial Class LoginForm
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Login As TextBox
+    Friend WithEvents Username As TextBox
     Friend WithEvents Password As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel2 As Panel

@@ -334,3 +334,4 @@ Content/*.png
 Content/*.jpg
 Content/*.txt
 Content/.DS_Store
+DTC/Resources/*.png

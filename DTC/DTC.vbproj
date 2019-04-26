@@ -63,6 +63,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\Content\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -118,6 +121,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TransparentTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="LoginForm.resx">
@@ -128,9 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -158,19 +164,52 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-circled-right-48.png" />
+    <None Include="Resources\icons8-services-24.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-circled-right-10.png" />
+    <None Include="Resources\dinamica_eletrica_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-circled-right-24.png" />
+    <None Include="Resources\dinamica_eletrica_wht_v2-uai-258x58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-offline1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-about-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-post-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pie-chart-report-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-event-24.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-sidebar-menu-24.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-sidebar-menu-24over.png" />
+    <None Include="Resources\icons8-user-account-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-building-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
