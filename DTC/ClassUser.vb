@@ -3,6 +3,7 @@
     Private userPrivilegeValue As Integer
     Private userFunctionValue As String
     Private userAreaValue As Integer
+    Private userImageValue As String
 
     Public Property UserName() As String
         Get
@@ -48,4 +49,14 @@
         End Set
     End Property
 
+    Public Property UserImage() As String
+        Get
+            ' Gets the property value.
+            Return userImageValue
+        End Get
+        Set(ByVal Value As String)
+            ' Sets the property value.
+            userImageValue = Value
+        End Set
+    End Property
 End Class
