@@ -6,6 +6,24 @@ Public Class MainForm
     Private isMouseDown As Boolean
     Private mouseOffset As Point
 
+    Private Function LoadUsers() As DataTable
+        Dim dt As New DataTable
+        dt.Columns.Add("Usuario")
+        dt.Columns.Add("Senha")
+        dt.Columns.Add("Nome")
+        dt.Columns.Add("Função")
+        dt.Columns.Add("Área")
+        dt.Columns.Add("Nível de Acesso")
+        dt.Columns.Add("Foto de Perfil")
+
+        For i = 0 To 4
+            dt.Rows.Add()
+            For j = 0 To 6
+                dt.Rows(i).Item(j) = LoginForm.users(i, j)
+            Next
+        Next
+        Return dt
+    End Function
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'itens a serem excluidos
         '
@@ -30,6 +48,9 @@ Public Class MainForm
 
         Label1.Text = LoginForm.user.UserName
         Label2.Text = LoginForm.user.UserFunction
+        PictureBox2.ImageLocation = LoginForm.user.UserImage
+        DataGridView1.DataSource = LoadUsers()
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -40,6 +61,7 @@ Public Class MainForm
         Panel6.Height = Button1.Height
         'chama as funções da janela inicial
         TabControl1.SelectedTab = TabPage1
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -139,11 +161,14 @@ Public Class MainForm
         TabControl1.SelectedTab = TabPage3
     End Sub
 
+
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         Panel8.Show()
         Panel8.Top = Button11.Top
         Panel8.Height = Button11.Height
         TabControl1.SelectedTab = TabPage2
+        ' loadUsers()
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -153,6 +178,127 @@ Public Class MainForm
         TabControl1.SelectedTab = TabPage8
     End Sub
 
+    Private Function ImageLoad() As String
+        Dim pic As New OpenFileDialog With {
+            .InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments,
+            .Filter = "Arquivo de Imagem(*.PNG, *JPG, *BMP)|*.PNG;*.JPG;*.BMP"
+        }
 
+        ' salvar a imagem reduzida para 71x71 com o circulo em torno em pastado de fotos gerais do sistema
+        ' Usar o imageMagick
+        If pic.ShowDialog = DialogResult.OK Then
+            Return pic.FileName
+        Else
+            Return ""
+        End If
+    End Function
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Dim imageLocation As String
+        imageLocation = ImageLoad()
 
+        If imageLocation.Length > 0 Then
+            PictureBox4.ImageLocation = imageLocation
+        End If
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        TextBox5.Text = "123456"
+    End Sub
+
+    Private Sub PictureBox4_DoubleClick(sender As Object, e As EventArgs) Handles PictureBox4.DoubleClick
+        Dim imageLocation As String
+        imageLocation = ImageLoad()
+
+        If imageLocation.Length > 0 Then
+            PictureBox4.ImageLocation = imageLocation
+        End If
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
+        ComboBox1.SelectedIndex = -1
+        ComboBox2.SelectedIndex = -1
+        CheckBox1.Checked = False
+        PictureBox4.ImageLocation = ""
+    End Sub
+
+    Private index As Integer
+    Private Sub DataGridView1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+        index = e.RowIndex
+        If e.Button = MouseButtons.Right Then
+            TextBox1.Text = DataGridView1.Rows(e.RowIndex).Cells(2).Value
+            TextBox2.Text = DataGridView1.Rows(e.RowIndex).Cells(3).Value
+            TextBox4.Text = DataGridView1.Rows(e.RowIndex).Cells(0).Value
+            TextBox5.Text = DataGridView1.Rows(e.RowIndex).Cells(1).Value
+            ComboBox1.SelectedIndex = DataGridView1.Rows(e.RowIndex).Cells(4).Value
+            ComboBox2.SelectedIndex = DataGridView1.Rows(e.RowIndex).Cells(5).Value
+            PictureBox4.ImageLocation = DataGridView1.Rows(e.RowIndex).Cells(6).Value
+            DataGridView1.ClearSelection()
+            DataGridView1.Rows(e.RowIndex).Selected = True
+        End If
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        TextBox1.Text = DataGridView1.Rows(index).Cells(2).Value
+        TextBox2.Text = DataGridView1.Rows(index).Cells(3).Value
+        TextBox4.Text = DataGridView1.Rows(index).Cells(0).Value
+        TextBox5.Text = DataGridView1.Rows(index).Cells(1).Value
+        ComboBox1.SelectedIndex = DataGridView1.Rows(index).Cells(4).Value
+        ComboBox2.SelectedIndex = DataGridView1.Rows(index).Cells(5).Value
+        PictureBox4.ImageLocation = DataGridView1.Rows(index).Cells(6).Value
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
+        ComboBox1.SelectedIndex = -1
+        ComboBox2.SelectedIndex = -1
+        CheckBox1.Checked = False
+        PictureBox4.ImageLocation = ""
+        index = -2
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        If index = -2 Then
+            DataGridView1.Rows.Add(TextBox4.Text, TextBox5.Text, TextBox1.Text, TextBox2.Text, ComboBox1.SelectedIndex, ComboBox2.SelectedIndex, PictureBox4.ImageLocation)
+        Else
+
+            DataGridView1.Rows(index).Cells(0).Value = TextBox4.Text
+            DataGridView1.Rows(index).Cells(1).Value = TextBox5.Text
+            DataGridView1.Rows(index).Cells(2).Value = TextBox1.Text
+            DataGridView1.Rows(index).Cells(3).Value = TextBox2.Text
+            DataGridView1.Rows(index).Cells(4).Value = ComboBox1.SelectedIndex
+            DataGridView1.Rows(index).Cells(5).Value = ComboBox2.SelectedIndex
+            DataGridView1.Rows(index).Cells(6).Value = PictureBox4.ImageLocation
+        End If
+    End Sub
+    Private senhaatualOk As Boolean
+    Private userPassUpdade As Integer
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        For i = 0 To 4
+            If LoginForm.user.UserName = LoginForm.users(i, 0) Then
+                If TextBox7.Text = LoginForm.users(i, 2) Then
+                    senhaatualOk = True
+                    userPassUpdade = i
+                Else
+                    senhaatualOk = False
+                End If
+            End If
+        Next
+
+        If senhaatualOk AndAlso TextBox8.Text = TextBox9.Text Then
+            LoginForm.users(userPassUpdade, 2) = TextBox8.Text
+        ElseIf Not senhaatualOk Then
+            MsgBox("Senha digitada não corresponde com a atual")
+        Else
+            MsgBox("As duas digitações não correspondem")
+        End If
+    End Sub
 End Class

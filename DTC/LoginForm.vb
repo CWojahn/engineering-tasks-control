@@ -3,7 +3,7 @@
 Public Class LoginForm
     Public user As New ClassUser
     Private userSave As Boolean
-    Public users(4, 5) As String
+    Public users(4, 6) As String
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
         Dim TheControl As Control = CType(sender, Control)
@@ -29,7 +29,8 @@ Public Class LoginForm
                             user.UserName = users(i, 2)
                             user.UserFunction = users(i, 3)
                             user.UserArea = users(i, 4)
-                            user.UserPrivilege = users(i, 4)
+                            user.UserPrivilege = users(i, 5)
+                            user.UserImage = users(i, 6)
                             If userSave = True Then
                                 'My.Settings.usern = Username.Text
                                 ' My.Settings.pass = Password.Text
@@ -61,12 +62,12 @@ Public Class LoginForm
     End Sub
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'users = {{login,password,nome,funcao,area, privilegios}}
-        users = {{"projetista", "1234", "Projetista 1", "Projetista", 1, 3},
-            {"projetista2", "1234", "Projetista 2", "Projetista", 2, 3},
-            {"execusao", "1234", "Técnico de obras 1", "Técnico", 3, 3},
-            {"assistente", "1234", "Assistente 1", "Assistente", 3, 2},
-            {"supervisao", "1234", "Supervisor 1", "Supervisor", 0, 1}}
+        'users = {{login,password,nome,funcao,area, privilegios, imagem}}
+        users = {{"projetista", "1234", "Projetista 1", "Projetista", 1, 3, "C:\Users\carlo\OneDrive\Imagens\Capturar.PNG"},
+            {"projetista2", "1234", "Projetista 2", "Projetista", 2, 3, ""},
+            {"execusao", "1234", "Técnico de obras 1", "Técnico", 3, 3, ""},
+            {"assistente", "1234", "Assistente 1", "Assistente", 3, 2, ""},
+            {"supervisao", "1234", "Supervisor 1", "Supervisor", 0, 1, ""}}
         If userSave Then
             ' Username.Text = My.Settings.usern
             ' Password.Text = My.Settings.pass
