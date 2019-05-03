@@ -4,10 +4,10 @@
     Dim amountCellStyle As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle With {.Alignment = DataGridViewContentAlignment.MiddleRight, .Format = "N2"}
     Dim gridCellStyle As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle With {
        .Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft,
-       .BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(189, Byte), Integer)),
+       .BackColor = System.Drawing.Color.FromArgb(82, 119, 148),'aqui cor do cabeçalho
        .Font = New System.Drawing.Font("Bebas Neue", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte)),
        .ForeColor = System.Drawing.SystemColors.ControlLightLight,
-       .SelectionBackColor = System.Drawing.SystemColors.Highlight,
+       .SelectionBackColor = System.Drawing.Color.FromArgb(199, 32, 38),'aqui não seii
        .SelectionForeColor = System.Drawing.SystemColors.HighlightText,
        .WrapMode = System.Windows.Forms.DataGridViewTriState.[True]}
     Dim gridCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle With {
@@ -15,7 +15,7 @@
         .BackColor = System.Drawing.SystemColors.ControlLightLight,
         .Font = New System.Drawing.Font("Bebas Neue", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte)),
         .ForeColor = System.Drawing.SystemColors.ControlText,
-        .SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(89, Byte), Integer)),
+        .SelectionBackColor = System.Drawing.Color.FromArgb(232, 109, 0),'aqui cor do selecionado
         .SelectionForeColor = System.Drawing.SystemColors.HighlightText,
         .WrapMode = System.Windows.Forms.DataGridViewTriState.[False]}
     Dim gridCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle With {
@@ -23,12 +23,12 @@
         .BackColor = System.Drawing.Color.Lavender,
         .Font = New System.Drawing.Font("Bebas Neue", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte)),
         .ForeColor = System.Drawing.SystemColors.WindowText,
-        .SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(89, Byte), Integer)),
+        .SelectionBackColor = System.Drawing.Color.FromArgb(232, 109, 0),'aqui cor do selecionado
         .SelectionForeColor = System.Drawing.SystemColors.HighlightText,
         .WrapMode = System.Windows.Forms.DataGridViewTriState.[True]}
-    Sub applyGridTheme(ByRef grid As DataGridView)
-        grid.AllowUserToAddRows = False
-        grid.AllowUserToDeleteRows = False
+    Sub applyGridTheme(ByRef grid As DataGridView, ByVal UserPrivilege As Boolean)
+        grid.AllowUserToAddRows = UserPrivilege
+        grid.AllowUserToDeleteRows = UserPrivilege
         grid.BackgroundColor = System.Drawing.SystemColors.Window
         grid.BorderStyle = System.Windows.Forms.BorderStyle.None
         grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -38,8 +38,8 @@
         grid.DefaultCellStyle = gridCellStyle2
         grid.EnableHeadersVisualStyles = False
         grid.GridColor = System.Drawing.SystemColors.GradientInactiveCaption
-        grid.ReadOnly = True
-        grid.RowHeadersVisible = True
+        grid.ReadOnly = Not UserPrivilege
+        grid.RowHeadersVisible = Not UserPrivilege
         grid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         grid.RowHeadersDefaultCellStyle = gridCellStyle3
         grid.Font = gridCellStyle.Font

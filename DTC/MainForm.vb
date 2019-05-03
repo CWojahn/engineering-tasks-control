@@ -51,6 +51,13 @@ Public Class MainForm
 
         '
         '
+        applyGridTheme(DataGridView1, False)
+        applyGridTheme(DataGridView2, False)
+        applyGridTheme(DataGridView3, False)
+        applyGridTheme(DataGridView4, False)
+        applyGridTheme(DataGridView5, False)
+        applyGridTheme(DataGridView6, True)
+
         LoadData()
         If LoginForm.user.UserPrivilege = 3 Then
             Button2.Hide()
@@ -360,7 +367,7 @@ Public Class MainForm
     Private areasEnvolvidas() As CheckBox
 
     Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage8.Enter
-        applyGridTheme(DataGridView6)
+
         Dim idx As Integer
         idx = 0
         Threading.Thread.Sleep(100)
@@ -378,7 +385,4 @@ Public Class MainForm
         End If
     End Sub
 
-    Private Sub TabPage2_Enter(sender As Object, e As EventArgs) Handles TabPage2.Enter
-        applyGridTheme(DataGridView2)
-    End Sub
 End Class

@@ -10,7 +10,7 @@
         Me.TabPages.Add(tPage)
         Dim newGrid As New DataGridView With {.Dock = DockStyle.Fill, .DataSource = New DataView(_cDataset.Tables(tableName))}
         tPage.Controls.Add(newGrid)
-        applyGridTheme(newGrid)
+        applyGridTheme(newGrid, False)
         setGridRowHeader(newGrid)
         AddHandler newGrid.RowPostPaint, AddressOf rowPostPaint_HeaderCount
         AddHandler newGrid.CellMouseClick, AddressOf MainForm.CellMouseClick_DetailGrid

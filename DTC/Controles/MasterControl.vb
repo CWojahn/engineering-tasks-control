@@ -28,7 +28,7 @@
         InitializeComponent()
         _cDataset = cDataset
         childView._cDataset = cDataset
-        applyGridTheme(Me)
+        applyGridTheme(Me, False)
         Dock = DockStyle.Fill
     End Sub
     Private Sub InitializeComponent()
