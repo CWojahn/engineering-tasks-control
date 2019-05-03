@@ -29,6 +29,7 @@ Partial Class MainForm
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -68,7 +69,18 @@ Partial Class MainForm
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -116,24 +128,71 @@ Partial Class MainForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Panel17 = New System.Windows.Forms.Panel()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.DataGridView5 = New System.Windows.Forms.DataGridView()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Button21 = New System.Windows.Forms.Button()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Button31 = New System.Windows.Forms.Button()
+        Me.Button32 = New System.Windows.Forms.Button()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.Button33 = New System.Windows.Forms.Button()
+        Me.DataGridView6 = New System.Windows.Forms.DataGridView()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column15 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NwindDataSet = New DTC.nwindDataSet()
+        Me.CustomersTableAdapter1 = New DTC.nwindDataSetTableAdapters.CustomersTableAdapter()
+        Me.TableAdapterManager1 = New DTC.nwindDataSetTableAdapters.TableAdapterManager()
+        Me.OrderReportsTableAdapter1 = New DTC.nwindDataSetTableAdapters.OrderReportsTableAdapter()
+        Me.InvoicesTableAdapter1 = New DTC.nwindDataSetTableAdapters.InvoicesTableAdapter()
         Me.Panel1.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -147,7 +206,9 @@ Partial Class MainForm
         Me.Panel12.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.TabPage6.SuspendLayout()
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -160,13 +221,20 @@ Partial Class MainForm
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
-        Me.Panel15.SuspendLayout()
+        Me.Panel16.SuspendLayout()
+        Me.Panel18.SuspendLayout()
+        Me.Panel17.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel14.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
-        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox4.SuspendLayout()
+        Me.TabPage8.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.Panel19.SuspendLayout()
+        Me.Panel20.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -710,6 +778,19 @@ Partial Class MainForm
         Me.TabPage6.Text = "Cronograma"
         Me.TabPage6.UseVisualStyleBackColor = True
         '
+        'DataGridView5
+        '
+        Me.DataGridView5.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView5.GridColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.DataGridView5.Location = New System.Drawing.Point(3, 3)
+        Me.DataGridView5.Name = "DataGridView5"
+        Me.DataGridView5.RowHeadersVisible = False
+        Me.DataGridView5.Size = New System.Drawing.Size(805, 535)
+        Me.DataGridView5.TabIndex = 0
+        '
         'TabPage5
         '
         Me.TabPage5.Controls.Add(Me.GroupBox4)
@@ -720,6 +801,111 @@ Partial Class MainForm
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Relatorios"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.DateTimePicker2)
+        Me.GroupBox4.Controls.Add(Me.Label18)
+        Me.GroupBox4.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox4.Controls.Add(Me.Label17)
+        Me.GroupBox4.Controls.Add(Me.Button21)
+        Me.GroupBox4.Controls.Add(Me.TextBox10)
+        Me.GroupBox4.Controls.Add(Me.Label16)
+        Me.GroupBox4.Controls.Add(Me.RadioButton2)
+        Me.GroupBox4.Controls.Add(Me.RadioButton1)
+        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupBox4.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(805, 172)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Configurar Exportação"
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(36, 136)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 23)
+        Me.DateTimePicker2.TabIndex = 22
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(12, 141)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(22, 16)
+        Me.Label18.TabIndex = 21
+        Me.Label18.Text = "Até"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(36, 107)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
+        Me.DateTimePicker1.TabIndex = 20
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(12, 112)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(18, 16)
+        Me.Label17.TabIndex = 19
+        Me.Label17.Text = "De"
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button21.FlatAppearance.BorderSize = 0
+        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button21.ForeColor = System.Drawing.Color.White
+        Me.Button21.Location = New System.Drawing.Point(694, 130)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(106, 32)
+        Me.Button21.TabIndex = 18
+        Me.Button21.Text = "Exportar"
+        Me.Button21.UseVisualStyleBackColor = False
+        '
+        'TextBox10
+        '
+        Me.TextBox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.TextBox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
+        Me.TextBox10.Location = New System.Drawing.Point(15, 67)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(221, 23)
+        Me.TextBox10.TabIndex = 3
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(12, 46)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(31, 16)
+        Me.Label16.TabIndex = 2
+        Me.Label16.Text = "Nome"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(67, 22)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(59, 20)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Usuario"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(15, 22)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(46, 20)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Obra"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'TabPage4
         '
@@ -1233,45 +1419,200 @@ Partial Class MainForm
         '
         'Panel16
         '
+        Me.Panel16.Controls.Add(Me.Panel18)
+        Me.Panel16.Controls.Add(Me.Panel17)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(320, 175)
+        Me.Panel16.Location = New System.Drawing.Point(317, 175)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(488, 363)
+        Me.Panel16.Size = New System.Drawing.Size(491, 363)
         Me.Panel16.TabIndex = 2
         '
-        'Panel15
+        'Panel18
         '
-        Me.Panel15.Controls.Add(Me.DataGridView2)
-        Me.Panel15.Controls.Add(Me.Label11)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel15.Font = New System.Drawing.Font("Bebas Neue", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel15.Location = New System.Drawing.Point(3, 175)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(317, 363)
-        Me.Panel15.TabIndex = 1
+        Me.Panel18.Controls.Add(Me.Button29)
+        Me.Panel18.Controls.Add(Me.Button28)
+        Me.Panel18.Controls.Add(Me.Button27)
+        Me.Panel18.Controls.Add(Me.Button26)
+        Me.Panel18.Controls.Add(Me.Button25)
+        Me.Panel18.Controls.Add(Me.Button24)
+        Me.Panel18.Controls.Add(Me.Button23)
+        Me.Panel18.Controls.Add(Me.Button22)
+        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel18.Location = New System.Drawing.Point(355, 0)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(136, 363)
+        Me.Panel18.TabIndex = 1
+        '
+        'Button29
+        '
+        Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button29.FlatAppearance.BorderSize = 0
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button29.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button29.ForeColor = System.Drawing.Color.White
+        Me.Button29.Location = New System.Drawing.Point(13, 276)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(106, 32)
+        Me.Button29.TabIndex = 23
+        Me.Button29.Text = "Salvar Andamento"
+        Me.Button29.UseVisualStyleBackColor = False
+        '
+        'Button28
+        '
+        Me.Button28.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button28.FlatAppearance.BorderSize = 0
+        Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button28.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button28.ForeColor = System.Drawing.Color.White
+        Me.Button28.Location = New System.Drawing.Point(13, 238)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(106, 32)
+        Me.Button28.TabIndex = 22
+        Me.Button28.Text = "Enviar Mensagem"
+        Me.Button28.UseVisualStyleBackColor = False
+        '
+        'Button27
+        '
+        Me.Button27.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button27.FlatAppearance.BorderSize = 0
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button27.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button27.ForeColor = System.Drawing.Color.White
+        Me.Button27.Location = New System.Drawing.Point(13, 200)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(106, 32)
+        Me.Button27.TabIndex = 21
+        Me.Button27.Text = "Envolvidos"
+        Me.Button27.UseVisualStyleBackColor = False
+        '
+        'Button26
+        '
+        Me.Button26.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button26.FlatAppearance.BorderSize = 0
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button26.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button26.ForeColor = System.Drawing.Color.White
+        Me.Button26.Location = New System.Drawing.Point(13, 162)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(106, 32)
+        Me.Button26.TabIndex = 20
+        Me.Button26.Text = "Proposta Técnica"
+        Me.Button26.UseVisualStyleBackColor = False
+        '
+        'Button25
+        '
+        Me.Button25.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button25.FlatAppearance.BorderSize = 0
+        Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button25.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button25.ForeColor = System.Drawing.Color.White
+        Me.Button25.Location = New System.Drawing.Point(13, 124)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(106, 32)
+        Me.Button25.TabIndex = 19
+        Me.Button25.Text = "Marcar Reunião"
+        Me.Button25.UseVisualStyleBackColor = False
+        '
+        'Button24
+        '
+        Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button24.FlatAppearance.BorderSize = 0
+        Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button24.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button24.ForeColor = System.Drawing.Color.White
+        Me.Button24.Location = New System.Drawing.Point(13, 86)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(106, 32)
+        Me.Button24.TabIndex = 18
+        Me.Button24.Text = "Incluir Ata"
+        Me.Button24.UseVisualStyleBackColor = False
+        '
+        'Button23
+        '
+        Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button23.FlatAppearance.BorderSize = 0
+        Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button23.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button23.ForeColor = System.Drawing.Color.White
+        Me.Button23.Location = New System.Drawing.Point(13, 48)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(106, 32)
+        Me.Button23.TabIndex = 17
+        Me.Button23.Text = "Atas de Reunião"
+        Me.Button23.UseVisualStyleBackColor = False
+        '
+        'Button22
+        '
+        Me.Button22.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button22.FlatAppearance.BorderSize = 0
+        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button22.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button22.ForeColor = System.Drawing.Color.White
+        Me.Button22.Location = New System.Drawing.Point(13, 10)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(106, 32)
+        Me.Button22.TabIndex = 16
+        Me.Button22.Text = "Pasta da Obra"
+        Me.Button22.UseVisualStyleBackColor = False
+        '
+        'Panel17
+        '
+        Me.Panel17.Controls.Add(Me.DataGridView2)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel17.Location = New System.Drawing.Point(0, 0)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(355, 363)
+        Me.Panel17.TabIndex = 0
         '
         'DataGridView2
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.DataGridView2.GridColor = System.Drawing.Color.DarkGray
-        Me.DataGridView2.Location = New System.Drawing.Point(0, 25)
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column10, Me.Column9, Me.Column11, Me.Column12})
+        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.DataGridView2.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersVisible = False
-        Me.DataGridView2.Size = New System.Drawing.Size(317, 338)
-        Me.DataGridView2.TabIndex = 1
+        Me.DataGridView2.Size = New System.Drawing.Size(355, 363)
+        Me.DataGridView2.TabIndex = 0
         '
-        'Label11
+        'Column10
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(3, 3)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(39, 19)
-        Me.Label11.TabIndex = 0
-        Me.Label11.Text = "Obras"
+        Me.Column10.HeaderText = "Atividade"
+        Me.Column10.Name = "Column10"
+        Me.Column10.Width = 175
+        '
+        'Column9
+        '
+        Me.Column9.FalseValue = "0"
+        Me.Column9.HeaderText = "Proj."
+        Me.Column9.Name = "Column9"
+        Me.Column9.TrueValue = "1"
+        Me.Column9.Width = 30
+        '
+        'Column11
+        '
+        Me.Column11.FalseValue = "0"
+        Me.Column11.HeaderText = "LM"
+        Me.Column11.Name = "Column11"
+        Me.Column11.TrueValue = "1"
+        Me.Column11.Width = 30
+        '
+        'Column12
+        '
+        Me.Column12.HeaderText = "Concluida"
+        Me.Column12.Name = "Column12"
+        '
+        'Panel15
+        '
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel15.Font = New System.Drawing.Font("Bebas Neue", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel15.Location = New System.Drawing.Point(3, 175)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(314, 363)
+        Me.Panel15.TabIndex = 1
         '
         'Panel14
         '
@@ -1314,6 +1655,9 @@ Partial Class MainForm
         '
         'TabPage8
         '
+        Me.TabPage8.Controls.Add(Me.GroupBox6)
+        Me.TabPage8.Controls.Add(Me.GroupBox5)
+        Me.TabPage8.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage8.Location = New System.Drawing.Point(4, 22)
         Me.TabPage8.Name = "TabPage8"
         Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
@@ -1322,123 +1666,432 @@ Partial Class MainForm
         Me.TabPage8.Text = "Cadastro de Obras"
         Me.TabPage8.UseVisualStyleBackColor = True
         '
-        'DataGridView5
+        'GroupBox5
         '
-        Me.DataGridView5.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView5.GridColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(153, Byte), Integer))
-        Me.DataGridView5.Location = New System.Drawing.Point(3, 3)
-        Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.RowHeadersVisible = False
-        Me.DataGridView5.Size = New System.Drawing.Size(805, 535)
-        Me.DataGridView5.TabIndex = 0
+        Me.GroupBox5.Controls.Add(Me.Button32)
+        Me.GroupBox5.Controls.Add(Me.Button31)
+        Me.GroupBox5.Controls.Add(Me.Panel20)
+        Me.GroupBox5.Controls.Add(Me.Label27)
+        Me.GroupBox5.Controls.Add(Me.Panel19)
+        Me.GroupBox5.Controls.Add(Me.Label26)
+        Me.GroupBox5.Controls.Add(Me.TextBox13)
+        Me.GroupBox5.Controls.Add(Me.Label25)
+        Me.GroupBox5.Controls.Add(Me.ComboBox7)
+        Me.GroupBox5.Controls.Add(Me.Label24)
+        Me.GroupBox5.Controls.Add(Me.ComboBox6)
+        Me.GroupBox5.Controls.Add(Me.Label23)
+        Me.GroupBox5.Controls.Add(Me.ComboBox5)
+        Me.GroupBox5.Controls.Add(Me.Label22)
+        Me.GroupBox5.Controls.Add(Me.ComboBox4)
+        Me.GroupBox5.Controls.Add(Me.Label21)
+        Me.GroupBox5.Controls.Add(Me.Button30)
+        Me.GroupBox5.Controls.Add(Me.ComboBox3)
+        Me.GroupBox5.Controls.Add(Me.Label20)
+        Me.GroupBox5.Controls.Add(Me.TextBox12)
+        Me.GroupBox5.Controls.Add(Me.Label19)
+        Me.GroupBox5.Controls.Add(Me.TextBox11)
+        Me.GroupBox5.Controls.Add(Me.Label11)
+        Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.GroupBox5.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(805, 205)
+        Me.GroupBox5.TabIndex = 0
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Obra"
         '
-        'GroupBox4
+        'Label11
         '
-        Me.GroupBox4.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox4.Controls.Add(Me.Label18)
-        Me.GroupBox4.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox4.Controls.Add(Me.Label17)
-        Me.GroupBox4.Controls.Add(Me.Button21)
-        Me.GroupBox4.Controls.Add(Me.TextBox10)
-        Me.GroupBox4.Controls.Add(Me.Label16)
-        Me.GroupBox4.Controls.Add(Me.RadioButton2)
-        Me.GroupBox4.Controls.Add(Me.RadioButton1)
-        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox4.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(805, 172)
-        Me.GroupBox4.TabIndex = 0
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Configurar Exportação"
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 19)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(50, 16)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "Id da Obra"
         '
-        'RadioButton1
+        'TextBox11
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(15, 22)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(46, 20)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Obra"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.TextBox11.Location = New System.Drawing.Point(9, 38)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(53, 23)
+        Me.TextBox11.TabIndex = 1
         '
-        'RadioButton2
+        'TextBox12
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(67, 22)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(59, 20)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Usuario"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.TextBox12.Location = New System.Drawing.Point(68, 38)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(360, 23)
+        Me.TextBox12.TabIndex = 3
         '
-        'Label16
+        'Label19
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(12, 46)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(31, 16)
-        Me.Label16.TabIndex = 2
-        Me.Label16.Text = "Nome"
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(65, 19)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(28, 16)
+        Me.Label19.TabIndex = 2
+        Me.Label19.Text = "Obra"
         '
-        'TextBox10
+        'Label20
         '
-        Me.TextBox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.TextBox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.TextBox10.Location = New System.Drawing.Point(15, 67)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(221, 23)
-        Me.TextBox10.TabIndex = 3
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(431, 19)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(41, 16)
+        Me.Label20.TabIndex = 4
+        Me.Label20.Text = "Cliente"
         '
-        'Button21
+        'ComboBox3
         '
-        Me.Button21.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Button21.FlatAppearance.BorderSize = 0
-        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button21.ForeColor = System.Drawing.Color.White
-        Me.Button21.Location = New System.Drawing.Point(694, 130)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(106, 32)
-        Me.Button21.TabIndex = 18
-        Me.Button21.Text = "Exportar"
-        Me.Button21.UseVisualStyleBackColor = False
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(434, 37)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(241, 24)
+        Me.ComboBox3.TabIndex = 5
         '
-        'Label17
+        'Button30
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(12, 112)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(18, 16)
-        Me.Label17.TabIndex = 19
-        Me.Label17.Text = "De"
+        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.ForeColor = System.Drawing.Color.White
+        Me.Button30.Location = New System.Drawing.Point(693, 29)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(106, 32)
+        Me.Button30.TabIndex = 16
+        Me.Button30.Text = "Novo Cliente"
+        Me.Button30.UseVisualStyleBackColor = False
         '
-        'DateTimePicker1
+        'ComboBox4
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(36, 107)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
-        Me.DateTimePicker1.TabIndex = 20
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(9, 88)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(53, 24)
+        Me.ComboBox4.TabIndex = 18
         '
-        'DateTimePicker2
+        'Label21
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(36, 136)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 23)
-        Me.DateTimePicker2.TabIndex = 22
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(6, 70)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(17, 16)
+        Me.Label21.TabIndex = 17
+        Me.Label21.Text = "UF"
         '
-        'Label18
+        'ComboBox5
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(12, 141)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(22, 16)
-        Me.Label18.TabIndex = 21
-        Me.Label18.Text = "Até"
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(68, 88)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(184, 24)
+        Me.ComboBox5.TabIndex = 20
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(65, 70)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(36, 16)
+        Me.Label22.TabIndex = 19
+        Me.Label22.Text = "Cidade"
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(258, 88)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(250, 24)
+        Me.ComboBox6.TabIndex = 22
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(255, 70)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(49, 16)
+        Me.Label23.TabIndex = 21
+        Me.Label23.Text = "Vendedor"
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Location = New System.Drawing.Point(514, 87)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(226, 24)
+        Me.ComboBox7.TabIndex = 24
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(511, 69)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(115, 16)
+        Me.Label24.TabIndex = 23
+        Me.Label24.Text = "Responsável Engenharia"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(746, 88)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(53, 23)
+        Me.TextBox13.TabIndex = 26
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(743, 69)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(54, 16)
+        Me.Label25.TabIndex = 25
+        Me.Label25.Text = "Prioridade"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(7, 120)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(82, 16)
+        Me.Label26.TabIndex = 27
+        Me.Label26.Text = "Áreas Envolvidas"
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(3, 5)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(74, 20)
+        Me.CheckBox2.TabIndex = 28
+        Me.CheckBox2.Text = "Automação"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(3, 29)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(103, 20)
+        Me.CheckBox3.TabIndex = 29
+        Me.CheckBox3.Text = "Painéis Elétricos"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(144, 5)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(123, 20)
+        Me.CheckBox4.TabIndex = 30
+        Me.CheckBox4.Text = "Instalações Elétricas"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(144, 29)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(127, 20)
+        Me.CheckBox5.TabIndex = 31
+        Me.CheckBox5.Text = "Instalações Mecânicas"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'Panel19
+        '
+        Me.Panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel19.Controls.Add(Me.CheckBox2)
+        Me.Panel19.Controls.Add(Me.CheckBox5)
+        Me.Panel19.Controls.Add(Me.CheckBox3)
+        Me.Panel19.Controls.Add(Me.CheckBox4)
+        Me.Panel19.Location = New System.Drawing.Point(9, 139)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(295, 56)
+        Me.Panel19.TabIndex = 32
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(317, 120)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(88, 16)
+        Me.Label27.TabIndex = 33
+        Me.Label27.Text = "Requisitos da Obra"
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Location = New System.Drawing.Point(218, 5)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(103, 20)
+        Me.CheckBox9.TabIndex = 30
+        Me.CheckBox9.Text = "Área Classificada"
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Location = New System.Drawing.Point(3, 29)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(167, 20)
+        Me.CheckBox8.TabIndex = 29
+        Me.CheckBox8.Text = "Aprovação em Corpo de Bombeiro"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Location = New System.Drawing.Point(218, 29)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(127, 20)
+        Me.CheckBox7.TabIndex = 31
+        Me.CheckBox7.Text = "Instalações Mecânicas"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Location = New System.Drawing.Point(3, 5)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(156, 20)
+        Me.CheckBox6.TabIndex = 28
+        Me.CheckBox6.Text = "Aprovação em Concessionária"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'Panel20
+        '
+        Me.Panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel20.Controls.Add(Me.CheckBox6)
+        Me.Panel20.Controls.Add(Me.CheckBox7)
+        Me.Panel20.Controls.Add(Me.CheckBox8)
+        Me.Panel20.Controls.Add(Me.CheckBox9)
+        Me.Panel20.Location = New System.Drawing.Point(319, 139)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(360, 56)
+        Me.Panel20.TabIndex = 34
+        '
+        'Button31
+        '
+        Me.Button31.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button31.FlatAppearance.BorderSize = 0
+        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button31.ForeColor = System.Drawing.Color.White
+        Me.Button31.Location = New System.Drawing.Point(693, 125)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(106, 32)
+        Me.Button31.TabIndex = 35
+        Me.Button31.Text = "Salvar"
+        Me.Button31.UseVisualStyleBackColor = False
+        '
+        'Button32
+        '
+        Me.Button32.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button32.FlatAppearance.BorderSize = 0
+        Me.Button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button32.ForeColor = System.Drawing.Color.White
+        Me.Button32.Location = New System.Drawing.Point(693, 163)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(106, 32)
+        Me.Button32.TabIndex = 36
+        Me.Button32.Text = "Adicionar Atividade"
+        Me.Button32.UseVisualStyleBackColor = False
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.DataGridView6)
+        Me.GroupBox6.Controls.Add(Me.Button33)
+        Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox6.Location = New System.Drawing.Point(3, 208)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(805, 330)
+        Me.GroupBox6.TabIndex = 1
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Atividades"
+        Me.GroupBox6.Visible = False
+        '
+        'Button33
+        '
+        Me.Button33.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button33.FlatAppearance.BorderSize = 0
+        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button33.ForeColor = System.Drawing.Color.White
+        Me.Button33.Location = New System.Drawing.Point(693, 293)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(106, 32)
+        Me.Button33.TabIndex = 37
+        Me.Button33.Text = "Salvar Atividades"
+        Me.Button33.UseVisualStyleBackColor = False
+        '
+        'DataGridView6
+        '
+        Me.DataGridView6.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Bebas Neue", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column13, Me.Column14, Me.Column15, Me.Column16, Me.Column17})
+        Me.DataGridView6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DataGridView6.GridColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(108, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.DataGridView6.Location = New System.Drawing.Point(3, 19)
+        Me.DataGridView6.Name = "DataGridView6"
+        Me.DataGridView6.Size = New System.Drawing.Size(799, 268)
+        Me.DataGridView6.TabIndex = 38
+        '
+        'Column13
+        '
+        Me.Column13.HeaderText = "Atividade"
+        Me.Column13.Name = "Column13"
+        Me.Column13.Width = 250
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Área"
+        Me.Column14.Name = "Column14"
+        Me.Column14.Width = 125
+        '
+        'Column15
+        '
+        Me.Column15.HeaderText = "Responsável"
+        Me.Column15.Name = "Column15"
+        Me.Column15.Width = 175
+        '
+        'Column16
+        '
+        Me.Column16.HeaderText = "Data de Projeto"
+        Me.Column16.Name = "Column16"
+        Me.Column16.Width = 95
+        '
+        'Column17
+        '
+        Me.Column17.HeaderText = "Data de LM"
+        Me.Column17.Name = "Column17"
+        Me.Column17.Width = 90
+        '
+        'NwindDataSet
+        '
+        Me.NwindDataSet.DataSetName = "nwindDataSet"
+        Me.NwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CustomersTableAdapter1
+        '
+        Me.CustomersTableAdapter1.ClearBeforeFill = True
+        '
+        'TableAdapterManager1
+        '
+        Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager1.CustomersTableAdapter = Me.CustomersTableAdapter1
+        Me.TableAdapterManager1.UpdateOrder = DTC.nwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'OrderReportsTableAdapter1
+        '
+        Me.OrderReportsTableAdapter1.ClearBeforeFill = True
+        '
+        'InvoicesTableAdapter1
+        '
+        Me.InvoicesTableAdapter1.ClearBeforeFill = True
         '
         'MainForm
         '
@@ -1468,7 +2121,10 @@ Partial Class MainForm
         Me.TabPage7.ResumeLayout(False)
         Me.TabPage7.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
+        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
@@ -1483,15 +2139,23 @@ Partial Class MainForm
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel15.PerformLayout()
+        Me.Panel16.ResumeLayout(False)
+        Me.Panel18.ResumeLayout(False)
+        Me.Panel17.ResumeLayout(False)
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel14.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
-        CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
+        Me.TabPage8.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.Panel19.ResumeLayout(False)
+        Me.Panel19.PerformLayout()
+        Me.Panel20.ResumeLayout(False)
+        Me.Panel20.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1565,8 +2229,6 @@ Partial Class MainForm
     Friend WithEvents Panel15 As Panel
     Friend WithEvents Panel14 As Panel
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents Label11 As Label
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents DataGridView3 As DataGridView
     Friend WithEvents Column1 As DataGridViewCheckBoxColumn
@@ -1600,4 +2262,64 @@ Partial Class MainForm
     Friend WithEvents Label16 As Label
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents NwindDataSet As nwindDataSet
+    Friend WithEvents CustomersTableAdapter1 As nwindDataSetTableAdapters.CustomersTableAdapter
+    Friend WithEvents TableAdapterManager1 As nwindDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents OrderReportsTableAdapter1 As nwindDataSetTableAdapters.OrderReportsTableAdapter
+    Friend WithEvents InvoicesTableAdapter1 As nwindDataSetTableAdapters.InvoicesTableAdapter
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents Panel18 As Panel
+    Friend WithEvents Button29 As Button
+    Friend WithEvents Button28 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewCheckBoxColumn
+    Friend WithEvents Column11 As DataGridViewCheckBoxColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Button30 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Panel19 As Panel
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents DataGridView6 As DataGridView
+    Friend WithEvents Button33 As Button
+    Friend WithEvents Button32 As Button
+    Friend WithEvents Button31 As Button
+    Friend WithEvents Panel20 As Panel
+    Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewComboBoxColumn
+    Friend WithEvents Column15 As DataGridViewComboBoxColumn
+    Friend WithEvents Column16 As DataGridViewTextBoxColumn
+    Friend WithEvents Column17 As DataGridViewTextBoxColumn
 End Class

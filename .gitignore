@@ -332,6 +332,11 @@ ASALocalRun/
 #content
 Content/*.png
 Content/*.jpg
+Content/*.gif
+Content/*.bmp
 Content/*.txt
 Content/.DS_Store
 DTC/Resources/*.png
+DTC/Resources/*.gif
+DTC/*.mdb
+DTC/*.xsd

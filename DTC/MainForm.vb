@@ -5,6 +5,26 @@ Public Class MainForm
     Public connectedOnServer As Boolean
     Private isMouseDown As Boolean
     Private mouseOffset As Point
+    Dim masterDetail As MasterControl
+    Sub ClearFields()
+        Panel15.Controls.Clear()
+        masterDetail = Nothing
+        Refresh()
+    End Sub
+    Sub LoadData()
+        ClearFields()
+        Me.OrderReportsTableAdapter1.Fill(Me.NwindDataSet.OrderReports)
+        Me.InvoicesTableAdapter1.Fill(Me.NwindDataSet.Invoices)
+        Me.CustomersTableAdapter1.Fill(Me.NwindDataSet.Customers)
+        CreateMasterDetailView()
+    End Sub
+    Sub CreateMasterDetailView()
+        masterDetail = New MasterControl(NwindDataSet)
+        Panel15.Controls.Add(masterDetail)
+        masterDetail.setParentSource(NwindDataSet.Customers.TableName, "CustomerID")
+        masterDetail.childView.Add(NwindDataSet.OrderReports.TableName, "Orders")
+        masterDetail.childView.Add(NwindDataSet.Invoices.TableName, "Invoices")
+    End Sub
 
     Private Function LoadUsers() As DataTable
         Dim dt As New DataTable
@@ -31,8 +51,20 @@ Public Class MainForm
 
         '
         '
+        applyGridTheme(DataGridView1, False)
+        applyGridTheme(DataGridView2, False)
+        applyGridTheme(DataGridView3, False)
+        applyGridTheme(DataGridView4, False)
+        applyGridTheme(DataGridView5, False)
+        applyGridTheme(DataGridView6, True)
 
+        LoadData()
+        If LoginForm.user.UserPrivilege = 3 Then
+            Button2.Hide()
+            Button5.Hide()
+        End If
 
+        Panel15.Width = Panel14.Width
         TabControl1.Appearance = TabAppearance.FlatButtons
         TabControl1.ItemSize = New Size(0, 1)
         TabControl1.SizeMode = TabSizeMode.Fixed
@@ -301,4 +333,56 @@ Public Class MainForm
             MsgBox("As duas digitações não correspondem")
         End If
     End Sub
+
+    Sub CellMouseClick_DetailGrid(sender As Object, e As DataGridViewCellMouseEventArgs)
+        Dim grid As DataGridView = CType(sender, DataGridView)
+        If e.RowIndex > -1 Then
+            Panel15.Width = 317
+            Panel17.Show()
+        End If
+
+    End Sub
+
+    Sub CellMouseClick_MasterGrid(sender As Object, e As DataGridViewCellMouseEventArgs)
+        Dim grid As DataGridView = CType(sender, DataGridView)
+        If grid.Tag = "True" Then
+            Panel15.Width = 670
+            Panel17.Hide()
+        Else
+            Panel15.Width = Panel14.Width
+            Panel17.Hide()
+        End If
+
+    End Sub
+
+    Private Sub Panel15_Resize(sender As Object, e As EventArgs) Handles Panel15.Resize
+        If Panel15.Width = 317 Then
+            Button29.Show()
+        Else
+            Button29.Hide()
+
+        End If
+    End Sub
+
+    Private areasEnvolvidas() As CheckBox
+
+    Private Sub TabPage8_Enter(sender As Object, e As EventArgs) Handles TabPage8.Enter
+
+        Dim idx As Integer
+        idx = 0
+        Threading.Thread.Sleep(100)
+        For Each chbox As CheckBox In Panel19.Controls
+            ReDim Preserve areasEnvolvidas(idx)
+            areasEnvolvidas(idx) = chbox
+            idx += 1
+        Next
+
+    End Sub
+
+    Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        If TextBox11.Text.Length > 0 Then
+            GroupBox6.Show()
+        End If
+    End Sub
+
 End Class
