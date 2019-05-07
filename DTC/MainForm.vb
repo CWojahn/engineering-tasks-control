@@ -138,12 +138,12 @@ Public Class MainForm
             Panel4.Width = 40
             Panel5.Hide()
             Panel7.Hide()
-            PictureBox1.Image = My.Resources.dinamica_eletrica_icon
+            PictureBox1.Image = My.Resources.Dinamica_icon
         Else
             Panel4.Width = 240
             Panel5.Show()
             Panel7.Show()
-            PictureBox1.Image = My.Resources.dinamica_eletrica_wht_v2_uai_258x58
+            PictureBox1.Image = My.Resources.Dinamica_comp
         End If
     End Sub
 
@@ -385,4 +385,7 @@ Public Class MainForm
         End If
     End Sub
 
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+
+    End Sub
 End Class

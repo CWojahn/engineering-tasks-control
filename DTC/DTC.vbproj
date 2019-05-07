@@ -93,6 +93,8 @@
   <ItemGroup>
     <Compile Include="ClassUser.vb" />
     <Compile Include="Controles\cModule.vb" />
+    <Compile Include="Controles\DataGridViewProgressCell.vb" />
+    <Compile Include="Controles\DataGridViewProgressColumn.vb" />
     <Compile Include="Controles\DetailControl.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -238,6 +240,8 @@
     <Content Include="nwind.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Dinamica_icon.png" />
+    <None Include="Resources\Dinamica_comp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
